@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { ChainId, DAppProvider, useEtherBalance, useEthers } from '@usedapp/core'
+import { ChainId, DAppProvider } from '@usedapp/core'
 
 function App() {
   return (
-    <DAppProvider config={{    
-supportedChains:[ChainId.Kovan,ChainId.Rinkeby]
+    <DAppProvider config={{
+      supportedChains: [ChainId.Kovan, ChainId.Rinkeby]
     }}>
-      <App />
+      <div>hi</div>
     </DAppProvider>
   );
 }
